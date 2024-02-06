@@ -2,7 +2,7 @@
 
 [![Update from monorepo](https://github.com/slint-ui/tree-sitter-slint/actions/workflows/update_from_monorepo.yaml/badge.svg)](https://github.com/slint-ui/tree-sitter-slint/actions/workflows/update_from_monorepo.yaml)
 
-# tree-sitter support for SLint
+# tree-sitter support for Slint
 
 > Tree-sitter is a parser generator tool and an incremental parsing library. It
 > can build a concrete syntax tree for a source file and efficiently update the
