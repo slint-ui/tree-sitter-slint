@@ -1,0 +1,55 @@
+name: Update from monorepo
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "0,4,8,12,16,20 9 * * *"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out tree-sitter repo
+        uses: actions/checkout@v4
+        with:
+          path: mine
+      - name: Check out monorepo
+        uses: actions/checkout@v4
+        with:
+          repository: slint-ui/slint
+          sparse-checkout: editors/tree-sitter-slint
+          path: monorepo
+
+      - uses: robinraju/release-downloader@v1.9
+        with:
+          repository: "tree-sitter/tree-sitter"
+          latest: true
+          fileName: "tree-sitter-linux-x64.gz"
+          out-file-path: ${{ runner.workspace }}
+      - name: Extract tree-sitter-cli
+        run: |
+          gunzip tree-sitter-linux-x64.gz
+          chmod 755 tree-sitter-linux-x64
+          mv tree-sitter-linux-x64 tree-sitter
+        working-directory: ${{ runner.workspace }}
+
+      - name: Update grammar.js
+        run: |
+          cp monorepo/editors/tree-sitter-slint/grammar.js mine
+          ( cd mine && "${{ runner.workspace }}/tree-sitter" generate )
+
+      - name: Git status
+        run: |
+          git status
+          git diff
+        working-directory: mine
+
+      - name: Push to repository
+        run: |
+          TS_VERSION=$( "${{ runner.workspace }}/tree-sitter" --version )
+          MONOREPO_VERSION=$( cd ../monorepo ; git log -n 1 --pretty=format:%H -- editors/tree-sitter-slint/grammar.js )
+          git config --global user.name "slint tree-sitter bot"
+          git config --global user.email "none@users.noreply.github.com"
+          git add -A && git commit -m "Update: grammar ${MONOREPO_VERSION} using ${TS_VERSION}" && git push || true
+        working-directory: mine
