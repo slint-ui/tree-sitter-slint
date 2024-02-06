@@ -1,5 +1,7 @@
 <!-- Copyright <C2><A9> SixtyFPS GmbH <info@slint.dev> ; SPDX-License-Identifier: GPL-3.0-only OR LicenseRef-Slint-Royalty-free-1.1 OR LicenseRef-Slint-commercial -->
 
+[![Update from monorepo](https://github.com/slint-ui/tree-sitter-slint/actions/workflows/update_from_monorepo.yaml/badge.svg)](https://github.com/slint-ui/tree-sitter-slint/actions/workflows/update_from_monorepo.yaml)
+
 # tree-sitter support for SLint
 
 > Tree-sitter is a parser generator tool and an incremental parsing library. It
