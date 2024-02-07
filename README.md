@@ -12,6 +12,9 @@
 
 Use with vim/helix/... other editors.
 
+Queries can be found in the [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter/pull/6027)
+plugin to nvim as well as the [helix](https://github.com/helix-editor/helix/pull/9551) editor.
+
 ## DO NOT EDIT
 
 This repository is for convenience of editor users only!
