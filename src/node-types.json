@@ -33,55 +33,7 @@
         "required": true,
         "types": [
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -116,55 +68,7 @@
           "named": true
         },
         {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
-          "type": "function_call",
-          "named": true
-        },
-        {
-          "type": "gradient_call",
-          "named": true
-        },
-        {
-          "type": "image_call",
-          "named": true
-        },
-        {
-          "type": "index_op",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "parens_op",
-          "named": true
-        },
-        {
-          "type": "reference_identifier",
-          "named": true
-        },
-        {
-          "type": "simple_identifier",
-          "named": true
-        },
-        {
-          "type": "ternary_expression",
-          "named": true
-        },
-        {
-          "type": "tr",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
-          "named": true
-        },
-        {
-          "type": "value",
+          "type": "expression",
           "named": true
         }
       ]
@@ -179,55 +83,11 @@
       "required": false,
       "types": [
         {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
-          "type": "function_call",
-          "named": true
-        },
-        {
-          "type": "gradient_call",
-          "named": true
-        },
-        {
-          "type": "image_call",
-          "named": true
-        },
-        {
-          "type": "index_op",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "parens_op",
-          "named": true
-        },
-        {
-          "type": "reference_identifier",
+          "type": "expression",
           "named": true
         },
         {
           "type": "simple_identifier",
-          "named": true
-        },
-        {
-          "type": "ternary_expression",
-          "named": true
-        },
-        {
-          "type": "tr",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
-          "named": true
-        },
-        {
-          "type": "value",
           "named": true
         }
       ]
@@ -242,55 +102,7 @@
       "required": true,
       "types": [
         {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
-          "type": "function_call",
-          "named": true
-        },
-        {
-          "type": "gradient_call",
-          "named": true
-        },
-        {
-          "type": "image_call",
-          "named": true
-        },
-        {
-          "type": "index_op",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "parens_op",
-          "named": true
-        },
-        {
-          "type": "reference_identifier",
-          "named": true
-        },
-        {
-          "type": "simple_identifier",
-          "named": true
-        },
-        {
-          "type": "ternary_expression",
-          "named": true
-        },
-        {
-          "type": "tr",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
-          "named": true
-        },
-        {
-          "type": "value",
+          "type": "expression",
           "named": true
         }
       ]
@@ -320,55 +132,7 @@
         "required": true,
         "types": [
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -408,55 +172,7 @@
         "required": true,
         "types": [
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -476,55 +192,7 @@
         "required": true,
         "types": [
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -545,55 +213,7 @@
         "required": true,
         "types": [
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -629,55 +249,7 @@
         "required": true,
         "types": [
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -697,59 +269,11 @@
             "named": false
           },
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
+            "type": "expression",
             "named": true
           },
           {
             "type": "imperative_block",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
             "named": true
           }
         ]
@@ -775,55 +299,7 @@
         "required": true,
         "types": [
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -990,55 +466,7 @@
         "required": true,
         "types": [
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -1145,10 +573,6 @@
         "required": false,
         "types": [
           {
-            "type": "builtin_type_identifier",
-            "named": true
-          },
-          {
             "type": "user_type_identifier",
             "named": true
           }
@@ -1158,10 +582,6 @@
         "multiple": false,
         "required": true,
         "types": [
-          {
-            "type": "builtin_type_identifier",
-            "named": true
-          },
           {
             "type": "user_type_identifier",
             "named": true
@@ -1209,7 +629,7 @@
         "required": false,
         "types": [
           {
-            "type": "simple_identifier",
+            "type": "user_type_identifier",
             "named": true
           }
         ]
@@ -1224,10 +644,6 @@
         "multiple": false,
         "required": true,
         "types": [
-          {
-            "type": "builtin_type_identifier",
-            "named": true
-          },
           {
             "type": "user_type_identifier",
             "named": true
@@ -1253,6 +669,55 @@
     "children": {
       "multiple": false,
       "required": false,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "export_type",
+    "named": true,
+    "fields": {
+      "export_name": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "builtin_type_identifier",
+            "named": true
+          },
+          {
+            "type": "user_type_identifier",
+            "named": true
+          }
+        ]
+      },
+      "local_name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "builtin_type_identifier",
+            "named": true
+          },
+          {
+            "type": "user_type_identifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
       "types": [
         {
           "type": "binary_expression",
@@ -1307,40 +772,6 @@
           "named": true
         }
       ]
-    }
-  },
-  {
-    "type": "export_type",
-    "named": true,
-    "fields": {
-      "export_name": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "builtin_type_identifier",
-            "named": true
-          },
-          {
-            "type": "user_type_identifier",
-            "named": true
-          }
-        ]
-      },
-      "local_name": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "builtin_type_identifier",
-            "named": true
-          },
-          {
-            "type": "user_type_identifier",
-            "named": true
-          }
-        ]
-      }
     }
   },
   {
@@ -1393,55 +824,7 @@
       "required": true,
       "types": [
         {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
-          "type": "function_call",
-          "named": true
-        },
-        {
-          "type": "gradient_call",
-          "named": true
-        },
-        {
-          "type": "image_call",
-          "named": true
-        },
-        {
-          "type": "index_op",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "parens_op",
-          "named": true
-        },
-        {
-          "type": "reference_identifier",
-          "named": true
-        },
-        {
-          "type": "simple_identifier",
-          "named": true
-        },
-        {
-          "type": "ternary_expression",
-          "named": true
-        },
-        {
-          "type": "tr",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
-          "named": true
-        },
-        {
-          "type": "value",
+          "type": "expression",
           "named": true
         },
         {
@@ -1595,10 +978,6 @@
         "required": true,
         "types": [
           {
-            "type": "builtin_type_identifier",
-            "named": true
-          },
-          {
             "type": "user_type_identifier",
             "named": true
           }
@@ -1708,55 +1087,7 @@
         "required": true,
         "types": [
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -1786,55 +1117,7 @@
         "required": true,
         "types": [
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -1894,10 +1177,6 @@
           "named": true
         },
         {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
           "type": "binding",
           "named": true
         },
@@ -1906,55 +1185,11 @@
           "named": true
         },
         {
-          "type": "function_call",
-          "named": true
-        },
-        {
-          "type": "gradient_call",
+          "type": "expression",
           "named": true
         },
         {
           "type": "if_expr",
-          "named": true
-        },
-        {
-          "type": "image_call",
-          "named": true
-        },
-        {
-          "type": "index_op",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "parens_op",
-          "named": true
-        },
-        {
-          "type": "reference_identifier",
-          "named": true
-        },
-        {
-          "type": "simple_identifier",
-          "named": true
-        },
-        {
-          "type": "ternary_expression",
-          "named": true
-        },
-        {
-          "type": "tr",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
-          "named": true
-        },
-        {
-          "type": "value",
           "named": true
         }
       ]
@@ -1988,10 +1223,6 @@
         "required": true,
         "types": [
           {
-            "type": "builtin_type_identifier",
-            "named": true
-          },
-          {
             "type": "user_type_identifier",
             "named": true
           }
@@ -2001,10 +1232,6 @@
         "multiple": false,
         "required": false,
         "types": [
-          {
-            "type": "builtin_type_identifier",
-            "named": true
-          },
           {
             "type": "user_type_identifier",
             "named": true
@@ -2026,55 +1253,7 @@
           "named": true
         },
         {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
-          "type": "function_call",
-          "named": true
-        },
-        {
-          "type": "gradient_call",
-          "named": true
-        },
-        {
-          "type": "image_call",
-          "named": true
-        },
-        {
-          "type": "index_op",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "parens_op",
-          "named": true
-        },
-        {
-          "type": "reference_identifier",
-          "named": true
-        },
-        {
-          "type": "simple_identifier",
-          "named": true
-        },
-        {
-          "type": "ternary_expression",
-          "named": true
-        },
-        {
-          "type": "tr",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
-          "named": true
-        },
-        {
-          "type": "value",
+          "type": "expression",
           "named": true
         }
       ]
@@ -2089,55 +1268,7 @@
         "required": true,
         "types": [
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -2147,55 +1278,7 @@
         "required": true,
         "types": [
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -2226,55 +1309,7 @@
         "required": true,
         "types": [
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -2284,55 +1319,7 @@
         "required": true,
         "types": [
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -2353,55 +1340,7 @@
         "required": true,
         "types": [
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -2431,59 +1370,11 @@
             "named": false
           },
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
+            "type": "expression",
             "named": true
           },
           {
             "type": "imperative_block",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
             "named": true
           }
         ]
@@ -2538,55 +1429,7 @@
       "required": false,
       "types": [
         {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
-          "type": "function_call",
-          "named": true
-        },
-        {
-          "type": "gradient_call",
-          "named": true
-        },
-        {
-          "type": "image_call",
-          "named": true
-        },
-        {
-          "type": "index_op",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "parens_op",
-          "named": true
-        },
-        {
-          "type": "reference_identifier",
-          "named": true
-        },
-        {
-          "type": "simple_identifier",
-          "named": true
-        },
-        {
-          "type": "ternary_expression",
-          "named": true
-        },
-        {
-          "type": "tr",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
-          "named": true
-        },
-        {
-          "type": "value",
+          "type": "expression",
           "named": true
         }
       ]
@@ -2611,59 +1454,11 @@
         "required": true,
         "types": [
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
+            "type": "expression",
             "named": true
           },
           {
             "type": "imperative_block",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
             "named": true
           }
         ]
@@ -2809,59 +1604,11 @@
           "named": true
         },
         {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
-          "type": "function_call",
-          "named": true
-        },
-        {
-          "type": "gradient_call",
-          "named": true
-        },
-        {
-          "type": "image_call",
+          "type": "expression",
           "named": true
         },
         {
           "type": "in_out_transition",
-          "named": true
-        },
-        {
-          "type": "index_op",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "parens_op",
-          "named": true
-        },
-        {
-          "type": "reference_identifier",
-          "named": true
-        },
-        {
-          "type": "simple_identifier",
-          "named": true
-        },
-        {
-          "type": "ternary_expression",
-          "named": true
-        },
-        {
-          "type": "tr",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
-          "named": true
-        },
-        {
-          "type": "value",
           "named": true
         }
       ]
@@ -2917,10 +1664,6 @@
         "required": true,
         "types": [
           {
-            "type": "builtin_type_identifier",
-            "named": true
-          },
-          {
             "type": "user_type_identifier",
             "named": true
           }
@@ -2947,55 +1690,7 @@
         "required": true,
         "types": [
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -3005,55 +1700,7 @@
         "required": true,
         "types": [
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -3063,55 +1710,7 @@
         "required": true,
         "types": [
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -3131,55 +1730,7 @@
             "named": false
           },
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -3213,55 +1764,7 @@
         "required": false,
         "types": [
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -3370,55 +1873,7 @@
         "required": true,
         "types": [
           {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "function_call",
-            "named": true
-          },
-          {
-            "type": "gradient_call",
-            "named": true
-          },
-          {
-            "type": "image_call",
-            "named": true
-          },
-          {
-            "type": "index_op",
-            "named": true
-          },
-          {
-            "type": "member_access",
-            "named": true
-          },
-          {
-            "type": "parens_op",
-            "named": true
-          },
-          {
-            "type": "reference_identifier",
-            "named": true
-          },
-          {
-            "type": "simple_identifier",
-            "named": true
-          },
-          {
-            "type": "ternary_expression",
-            "named": true
-          },
-          {
-            "type": "tr",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
-            "named": true
-          },
-          {
-            "type": "value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -3521,55 +1976,7 @@
       "required": false,
       "types": [
         {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
-          "type": "function_call",
-          "named": true
-        },
-        {
-          "type": "gradient_call",
-          "named": true
-        },
-        {
-          "type": "image_call",
-          "named": true
-        },
-        {
-          "type": "index_op",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "parens_op",
-          "named": true
-        },
-        {
-          "type": "reference_identifier",
-          "named": true
-        },
-        {
-          "type": "simple_identifier",
-          "named": true
-        },
-        {
-          "type": "ternary_expression",
-          "named": true
-        },
-        {
-          "type": "tr",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
-          "named": true
-        },
-        {
-          "type": "value",
+          "type": "expression",
           "named": true
         }
       ]
