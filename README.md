@@ -24,3 +24,10 @@ Please file bugs in the `slint-ui/slint` repository.
 Please go the the `slint-ui/slint` repository to edit this code: It is found
 there in `editors/tree-sitter-slint`.
 
+## History
+
+This is the second version of the tree-sitter parser for Slint. The first can be found here:
+
+https://github.com/jrmoulton/tree-sitter-slint
+
+A big thank you to @jrmoulton for creating and maintaining it!
