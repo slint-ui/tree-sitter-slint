@@ -1006,6 +1006,14 @@
           {
             "type": "angle_value",
             "named": true
+          },
+          {
+            "type": "float_value",
+            "named": true
+          },
+          {
+            "type": "int_value",
+            "named": true
           }
         ]
       },
@@ -1450,9 +1458,13 @@
         ]
       },
       "value": {
-        "multiple": false,
+        "multiple": true,
         "required": true,
         "types": [
+          {
+            "type": ";",
+            "named": false
+          },
           {
             "type": "expression",
             "named": true
