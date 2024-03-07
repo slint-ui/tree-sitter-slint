@@ -2063,10 +2063,6 @@
     "named": false
   },
   {
-    "type": "9slice",
-    "named": false
-  },
-  {
     "type": ":",
     "named": false
   },
@@ -2424,6 +2420,10 @@
   },
   {
     "type": "n",
+    "named": false
+  },
+  {
+    "type": "nine-slice",
     "named": false
   },
   {
