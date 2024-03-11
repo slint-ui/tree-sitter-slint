@@ -7,6 +7,12 @@
     "parsing",
     "incremental"
   ],
+  "tree-sitter": [
+    {
+      "scope": "source.slint",
+      "file-types": ["slint"]
+    }
+  ],
   "dependencies": {
     "nan": "^2.12.1"
   },
