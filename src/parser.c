@@ -4175,9 +4175,9 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
       if (lookahead == 'e') ADVANCE(331);
       if (lookahead == 'h') ADVANCE(419);
       if (lookahead == 'r') ADVANCE(190);
+      if (lookahead == 'u') ADVANCE(85);
       if (lookahead == 't' ||
           lookahead == 'x') ADVANCE(984);
-      if (lookahead == 'u') ADVANCE(85);
       END_STATE();
     case 60:
       if (lookahead == 'a') ADVANCE(344);
