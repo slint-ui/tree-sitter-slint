@@ -1208,6 +1208,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "changed_callback"
+        },
+        {
+          "type": "SYMBOL",
           "name": "component"
         },
         {
@@ -2642,6 +2646,35 @@
                 "name": "simple_identifier"
               }
             ]
+          }
+        },
+        {
+          "type": "STRING",
+          "value": "=>"
+        },
+        {
+          "type": "FIELD",
+          "name": "action",
+          "content": {
+            "type": "SYMBOL",
+            "name": "imperative_block"
+          }
+        }
+      ]
+    },
+    "changed_callback": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "changed"
+        },
+        {
+          "type": "FIELD",
+          "name": "name",
+          "content": {
+            "type": "SYMBOL",
+            "name": "simple_identifier"
           }
         },
         {

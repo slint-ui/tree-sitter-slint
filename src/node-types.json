@@ -355,6 +355,10 @@
           "named": true
         },
         {
+          "type": "changed_callback",
+          "named": true
+        },
+        {
           "type": "children_identifier",
           "named": true
         },
@@ -515,6 +519,32 @@
             "type": "function_call",
             "named": true
           },
+          {
+            "type": "simple_identifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "changed_callback",
+    "named": true,
+    "fields": {
+      "action": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imperative_block",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
           {
             "type": "simple_identifier",
             "named": true
@@ -2168,6 +2198,10 @@
   },
   {
     "type": "callback",
+    "named": false
+  },
+  {
+    "type": "changed",
     "named": false
   },
   {
