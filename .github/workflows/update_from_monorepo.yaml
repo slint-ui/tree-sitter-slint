@@ -12,6 +12,7 @@ jobs:
       - name: Check out tree-sitter repo
         uses: actions/checkout@v4
         with:
+          ref: nightly
           path: mine
       - name: Check out monorepo
         uses: actions/checkout@v4
