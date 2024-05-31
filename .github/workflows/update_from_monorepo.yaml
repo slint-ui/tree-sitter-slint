@@ -8,18 +8,26 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - mono_repo_ref: release/1
+            this_ref: master
+          - mono_repo_ref: master
+            this_ref: nightly
     steps:
-      - name: Check out tree-sitter repo
-        uses: actions/checkout@v4
-        with:
-          ref: nightly
-          path: mine
       - name: Check out monorepo
         uses: actions/checkout@v4
         with:
           repository: slint-ui/slint
+          ref: ${{ matrix.mono_repo_ref}}
           sparse-checkout: editors/tree-sitter-slint
           path: monorepo
+      - name: Check out tree-sitter-slint repo
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ matrix.this_ref}}
+          path: mine
 
       - uses: robinraju/release-downloader@v1.9
         with:
