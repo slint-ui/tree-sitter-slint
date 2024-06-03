@@ -47,6 +47,13 @@ jobs:
           cp monorepo/editors/tree-sitter-slint/grammar.js mine
           ( cd mine && "${{ runner.workspace }}/tree-sitter" generate )
 
+      # TODO: Remove after 1.7
+      - name: Relicense master branch
+        if: ${{ matrix.this_ref == 'master' }}
+        run: |
+          sed -ie "s!^// SPDX-License-Identifier: .*\$!// SPDX-License-Identifier: MIT!" grammar.js
+        working-directory: mine
+
       - name: Git status
         run: |
           git status
