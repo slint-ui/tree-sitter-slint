@@ -2238,6 +2238,10 @@
     "named": false
   },
   {
+    "type": "direction",
+    "named": false
+  },
+  {
     "type": "duration",
     "named": false
   },
