@@ -422,6 +422,10 @@
           {
             "type": "type",
             "named": true
+          },
+          {
+            "type": "typed_identifier",
+            "named": true
           }
         ]
       },
