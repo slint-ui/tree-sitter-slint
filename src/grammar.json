@@ -2922,6 +2922,114 @@
               "value": ")"
             }
           ]
+        },
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "FIELD",
+              "name": "name",
+              "content": {
+                "type": "SYMBOL",
+                "name": "conic_gradient_identifier"
+              }
+            },
+            {
+              "type": "STRING",
+              "value": "("
+            },
+            {
+              "type": "FIELD",
+              "name": "arguments",
+              "content": {
+                "type": "SEQ",
+                "members": [
+                  {
+                    "type": "CHOICE",
+                    "members": [
+                      {
+                        "type": "SEQ",
+                        "members": [
+                          {
+                            "type": "STRING",
+                            "value": "from"
+                          },
+                          {
+                            "type": "FIELD",
+                            "name": "from_angle",
+                            "content": {
+                              "type": "SYMBOL",
+                              "name": "angle_value"
+                            }
+                          },
+                          {
+                            "type": "STRING",
+                            "value": ","
+                          }
+                        ]
+                      },
+                      {
+                        "type": "BLANK"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "FIELD",
+                    "name": "colors",
+                    "content": {
+                      "type": "SEQ",
+                      "members": [
+                        {
+                          "type": "SYMBOL",
+                          "name": "conic_gradient_color"
+                        },
+                        {
+                          "type": "STRING",
+                          "value": ","
+                        },
+                        {
+                          "type": "SYMBOL",
+                          "name": "conic_gradient_color"
+                        },
+                        {
+                          "type": "REPEAT",
+                          "content": {
+                            "type": "SEQ",
+                            "members": [
+                              {
+                                "type": "STRING",
+                                "value": ","
+                              },
+                              {
+                                "type": "SYMBOL",
+                                "name": "conic_gradient_color"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "type": "CHOICE",
+                    "members": [
+                      {
+                        "type": "STRING",
+                        "value": ","
+                      },
+                      {
+                        "type": "BLANK"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "type": "STRING",
+              "value": ")"
+            }
+          ]
         }
       ]
     },
@@ -2943,6 +3051,19 @@
               "type": "BLANK"
             }
           ]
+        }
+      ]
+    },
+    "conic_gradient_color": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "argument"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "angle_value"
         }
       ]
     },
@@ -3126,8 +3247,17 @@
                       "type": "SEQ",
                       "members": [
                         {
-                          "type": "SYMBOL",
-                          "name": "type"
+                          "type": "CHOICE",
+                          "members": [
+                            {
+                              "type": "SYMBOL",
+                              "name": "typed_identifier"
+                            },
+                            {
+                              "type": "SYMBOL",
+                              "name": "type"
+                            }
+                          ]
                         },
                         {
                           "type": "REPEAT",
@@ -3139,8 +3269,17 @@
                                 "value": ","
                               },
                               {
-                                "type": "SYMBOL",
-                                "name": "type"
+                                "type": "CHOICE",
+                                "members": [
+                                  {
+                                    "type": "SYMBOL",
+                                    "name": "typed_identifier"
+                                  },
+                                  {
+                                    "type": "SYMBOL",
+                                    "name": "type"
+                                  }
+                                ]
                               }
                             ]
                           }
@@ -3856,6 +3995,19 @@
         {
           "type": "STRING",
           "value": "circle"
+        }
+      ]
+    },
+    "conic_gradient_identifier": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "@conic-gradient"
+        },
+        {
+          "type": "STRING",
+          "value": "@conic_gradient"
         }
       ]
     },

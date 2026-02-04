@@ -422,6 +422,10 @@
           {
             "type": "type",
             "named": true
+          },
+          {
+            "type": "typed_identifier",
+            "named": true
           }
         ]
       },
@@ -629,6 +633,30 @@
         }
       ]
     }
+  },
+  {
+    "type": "conic_gradient_color",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "angle_value",
+          "named": true
+        },
+        {
+          "type": "argument",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "conic_gradient_identifier",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "duration_value",
@@ -1049,10 +1077,14 @@
       },
       "arguments": {
         "multiple": true,
-        "required": true,
+        "required": false,
         "types": [
           {
             "type": ",",
+            "named": false
+          },
+          {
+            "type": "from",
             "named": false
           }
         ]
@@ -1066,7 +1098,21 @@
             "named": false
           },
           {
+            "type": "conic_gradient_color",
+            "named": true
+          },
+          {
             "type": "gradient_color",
+            "named": true
+          }
+        ]
+      },
+      "from_angle": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "angle_value",
             "named": true
           }
         ]
@@ -1075,6 +1121,10 @@
         "multiple": false,
         "required": true,
         "types": [
+          {
+            "type": "conic_gradient_identifier",
+            "named": true
+          },
           {
             "type": "linear_gradient_identifier",
             "named": true
@@ -2139,6 +2189,14 @@
   },
   {
     "type": "?",
+    "named": false
+  },
+  {
+    "type": "@conic-gradient",
+    "named": false
+  },
+  {
+    "type": "@conic_gradient",
     "named": false
   },
   {
