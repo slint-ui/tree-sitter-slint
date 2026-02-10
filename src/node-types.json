@@ -798,6 +798,10 @@
           "named": true
         },
         {
+          "type": "keys",
+          "named": true
+        },
+        {
           "type": "member_access",
           "named": true
         },
@@ -1377,6 +1381,25 @@
     "type": "int_value",
     "named": true,
     "fields": {}
+  },
+  {
+    "type": "keys",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "simple_identifier",
+          "named": true
+        },
+        {
+          "type": "string_value",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "length_value",
@@ -2201,6 +2224,10 @@
   },
   {
     "type": "@image-url",
+    "named": false
+  },
+  {
+    "type": "@keys",
     "named": false
   },
   {

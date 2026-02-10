@@ -1873,6 +1873,10 @@
         "members": [
           {
             "type": "SYMBOL",
+            "name": "keys"
+          },
+          {
+            "type": "SYMBOL",
             "name": "parens_op"
           },
           {
@@ -2118,6 +2122,69 @@
               }
             ]
           }
+        },
+        {
+          "type": "STRING",
+          "value": ")"
+        }
+      ]
+    },
+    "_keys_entry": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "simple_identifier"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "string_value"
+        }
+      ]
+    },
+    "keys": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "@keys"
+        },
+        {
+          "type": "STRING",
+          "value": "("
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "SYMBOL",
+                  "name": "_keys_entry"
+                },
+                {
+                  "type": "REPEAT",
+                  "content": {
+                    "type": "SEQ",
+                    "members": [
+                      {
+                        "type": "STRING",
+                        "value": "+"
+                      },
+                      {
+                        "type": "SYMBOL",
+                        "name": "_keys_entry"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
         },
         {
           "type": "STRING",
