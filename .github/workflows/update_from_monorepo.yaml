@@ -2,7 +2,7 @@ name: Update from monorepo
 
 on:
   schedule:
-    - cron: "29 * * * *"
+    - cron: "29 1 * * *"
   workflow_dispatch:
 
 jobs:
