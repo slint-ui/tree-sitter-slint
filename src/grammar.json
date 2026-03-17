@@ -2750,7 +2750,7 @@
           "name": "action",
           "content": {
             "type": "SYMBOL",
-            "name": "imperative_block"
+            "name": "_binding"
           }
         }
       ]
@@ -2779,7 +2779,7 @@
           "name": "action",
           "content": {
             "type": "SYMBOL",
-            "name": "imperative_block"
+            "name": "_binding"
           }
         }
       ]

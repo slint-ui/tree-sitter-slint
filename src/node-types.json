@@ -506,9 +506,35 @@
     "named": true,
     "fields": {
       "action": {
-        "multiple": false,
+        "multiple": true,
         "required": true,
         "types": [
+          {
+            "type": ";",
+            "named": false
+          },
+          {
+            "type": "expression",
+            "named": true
+          },
+          {
+            "type": "imperative_block",
+            "named": true
+          }
+        ]
+      },
+      "binding": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": ";",
+            "named": false
+          },
+          {
+            "type": "expression",
+            "named": true
+          },
           {
             "type": "imperative_block",
             "named": true
@@ -536,9 +562,35 @@
     "named": true,
     "fields": {
       "action": {
-        "multiple": false,
+        "multiple": true,
         "required": true,
         "types": [
+          {
+            "type": ";",
+            "named": false
+          },
+          {
+            "type": "expression",
+            "named": true
+          },
+          {
+            "type": "imperative_block",
+            "named": true
+          }
+        ]
+      },
+      "binding": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": ";",
+            "named": false
+          },
+          {
+            "type": "expression",
+            "named": true
+          },
           {
             "type": "imperative_block",
             "named": true
