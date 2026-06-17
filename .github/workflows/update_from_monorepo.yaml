@@ -46,7 +46,7 @@ jobs:
         run: |
           cp monorepo/editors/tree-sitter-slint/grammar.js mine
           # The tree-sitter grammar contains a custom scanner for comments
-          mkdir mine/src
+          mkdir -p mine/src
           # Don't fail if the scanner is missing, it is not yet released
           # TODO: Remove the `|| true` after next release
           (cp monorepo/editors/tree-sitter-slint/src/scanner.c mine/src || true)
