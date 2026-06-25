@@ -1019,27 +1019,6 @@
         }
       ]
     },
-    "binding": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "FIELD",
-          "name": "name",
-          "content": {
-            "type": "SYMBOL",
-            "name": "simple_identifier"
-          }
-        },
-        {
-          "type": "STRING",
-          "value": ":"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "_binding"
-        }
-      ]
-    },
     "global_block": {
       "type": "SEQ",
       "members": [
@@ -2715,7 +2694,7 @@
             "name": "op",
             "content": {
               "type": "SYMBOL",
-              "name": "_unary_prec_operator"
+              "name": "unary_prec_operator"
             }
           },
           {
@@ -4110,7 +4089,7 @@
         ]
       }
     },
-    "_unary_prec_operator": {
+    "unary_prec_operator": {
       "type": "CHOICE",
       "members": [
         {
@@ -5042,7 +5021,7 @@
       "assignment_block"
     ],
     [
-      "_unary_prec_operator",
+      "unary_prec_operator",
       "add_prec_operator"
     ]
   ],
