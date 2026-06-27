@@ -222,29 +222,24 @@
           "value": "("
         },
         {
-          "type": "SEQ",
-          "members": [
-            {
-              "type": "PATTERN",
-              "value": "[^()]*"
-            },
-            {
-              "type": "REPEAT",
-              "content": {
-                "type": "SEQ",
-                "members": [
-                  {
-                    "type": "SYMBOL",
-                    "name": "_rust_attr_args"
-                  },
-                  {
-                    "type": "PATTERN",
-                    "value": "[^()]*"
-                  }
-                ]
+          "type": "REPEAT",
+          "content": {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "PATTERN",
+                "value": "[^()\"]+"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "string_value"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "_rust_attr_args"
               }
-            }
-          ]
+            ]
+          }
         },
         {
           "type": "STRING",
