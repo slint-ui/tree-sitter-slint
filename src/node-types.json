@@ -2480,20 +2480,17 @@
         "required": true,
         "types": [
           {
-            "type": "!",
-            "named": false
-          },
-          {
-            "type": "+",
-            "named": false
-          },
-          {
-            "type": "-",
-            "named": false
+            "type": "unary_prec_operator",
+            "named": true
           }
         ]
       }
     }
+  },
+  {
+    "type": "unary_prec_operator",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "used_interface",
