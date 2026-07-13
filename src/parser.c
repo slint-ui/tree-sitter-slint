@@ -5793,7 +5793,9 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
       if (lookahead == '/') ADVANCE(543);
       if (('\t' <= lookahead && lookahead <= '\r') ||
           lookahead == ' ') ADVANCE(542);
-      if (lookahead != 0) ADVANCE(545);
+      if (lookahead != 0 &&
+          lookahead != 0x17f &&
+          lookahead != 0x212a) ADVANCE(545);
       END_STATE();
     case 21:
       if (lookahead == '"') ADVANCE(663);
@@ -5801,7 +5803,9 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
       if (lookahead == '\\') ADVANCE(668);
       if (('\t' <= lookahead && lookahead <= '\r') ||
           lookahead == ' ') ADVANCE(664);
-      if (lookahead != 0) ADVANCE(667);
+      if (lookahead != 0 &&
+          lookahead != 0x17f &&
+          lookahead != 0x212a) ADVANCE(667);
       END_STATE();
     case 22:
       if (lookahead == '&') ADVANCE(626);
@@ -7707,7 +7711,9 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
       if (lookahead != 0 &&
           lookahead != '"' &&
           lookahead != '(' &&
-          lookahead != ')') ADVANCE(545);
+          lookahead != ')' &&
+          lookahead != 0x17f &&
+          lookahead != 0x212a) ADVANCE(545);
       END_STATE();
     case 543:
       ACCEPT_TOKEN(aux_sym__rust_attr_args_token1);
@@ -7715,7 +7721,9 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
       if (lookahead != 0 &&
           lookahead != '"' &&
           lookahead != '(' &&
-          lookahead != ')') ADVANCE(545);
+          lookahead != ')' &&
+          lookahead != 0x17f &&
+          lookahead != 0x212a) ADVANCE(545);
       END_STATE();
     case 544:
       ACCEPT_TOKEN(aux_sym__rust_attr_args_token1);
@@ -7724,14 +7732,18 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
       if (lookahead == '"' ||
           lookahead == '(' ||
           lookahead == ')') ADVANCE(1168);
-      if (lookahead != 0) ADVANCE(544);
+      if (lookahead != 0 &&
+          lookahead != 0x17f &&
+          lookahead != 0x212a) ADVANCE(544);
       END_STATE();
     case 545:
       ACCEPT_TOKEN(aux_sym__rust_attr_args_token1);
       if (lookahead != 0 &&
           lookahead != '"' &&
           lookahead != '(' &&
-          lookahead != ')') ADVANCE(545);
+          lookahead != ')' &&
+          lookahead != 0x17f &&
+          lookahead != 0x212a) ADVANCE(545);
       END_STATE();
     case 546:
       ACCEPT_TOKEN(anon_sym_RPAREN);
@@ -8266,14 +8278,18 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
           lookahead == ' ') ADVANCE(664);
       if (lookahead != 0 &&
           lookahead != '"' &&
-          lookahead != '\\') ADVANCE(667);
+          lookahead != '\\' &&
+          lookahead != 0x17f &&
+          lookahead != 0x212a) ADVANCE(667);
       END_STATE();
     case 665:
       ACCEPT_TOKEN(sym__unescaped_string_fragment);
       if (lookahead == '/') ADVANCE(666);
       if (lookahead != 0 &&
           lookahead != '"' &&
-          lookahead != '\\') ADVANCE(667);
+          lookahead != '\\' &&
+          lookahead != 0x17f &&
+          lookahead != 0x212a) ADVANCE(667);
       END_STATE();
     case 666:
       ACCEPT_TOKEN(sym__unescaped_string_fragment);
@@ -8281,13 +8297,17 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
           lookahead == '\r') ADVANCE(667);
       if (lookahead != 0 &&
           lookahead != '"' &&
-          lookahead != '\\') ADVANCE(666);
+          lookahead != '\\' &&
+          lookahead != 0x17f &&
+          lookahead != 0x212a) ADVANCE(666);
       END_STATE();
     case 667:
       ACCEPT_TOKEN(sym__unescaped_string_fragment);
       if (lookahead != 0 &&
           lookahead != '"' &&
-          lookahead != '\\') ADVANCE(667);
+          lookahead != '\\' &&
+          lookahead != 0x17f &&
+          lookahead != 0x212a) ADVANCE(667);
       END_STATE();
     case 668:
       ACCEPT_TOKEN(anon_sym_BSLASH);
@@ -12371,7 +12391,9 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
       ACCEPT_TOKEN(sym_line_comment);
       if (lookahead != 0 &&
           lookahead != '\n' &&
-          lookahead != '\r') ADVANCE(1168);
+          lookahead != '\r' &&
+          lookahead != 0x17f &&
+          lookahead != 0x212a) ADVANCE(1168);
       END_STATE();
     default:
       return false;
