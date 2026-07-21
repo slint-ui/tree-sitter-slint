@@ -386,6 +386,10 @@
           "named": true
         },
         {
+          "type": "implement_statement",
+          "named": true
+        },
+        {
           "type": "match_statement",
           "named": true
         },
@@ -709,7 +713,7 @@
     "fields": {
       "base_type": {
         "multiple": false,
-        "required": false,
+        "required": true,
         "types": [
           {
             "type": "user_type_identifier",
@@ -717,20 +721,6 @@
           }
         ]
       }
-    },
-    "children": {
-      "multiple": false,
-      "required": false,
-      "types": [
-        {
-          "type": "implements_clause",
-          "named": true
-        },
-        {
-          "type": "uses_clause",
-          "named": true
-        }
-      ]
     }
   },
   {
@@ -1569,18 +1559,29 @@
     }
   },
   {
-    "type": "implements_clause",
+    "type": "implement_statement",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "user_type_identifier",
-          "named": true
-        }
-      ]
+    "fields": {
+      "interface": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "user_type_identifier",
+            "named": true
+          }
+        ]
+      },
+      "target": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "simple_identifier",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
@@ -2619,50 +2620,9 @@
     "fields": {}
   },
   {
-    "type": "used_interface",
-    "named": true,
-    "fields": {
-      "interface": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "user_type_identifier",
-            "named": true
-          }
-        ]
-      },
-      "source": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "simple_identifier",
-            "named": true
-          }
-        ]
-      }
-    }
-  },
-  {
     "type": "user_type_identifier",
     "named": true,
     "fields": {}
-  },
-  {
-    "type": "uses_clause",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "used_interface",
-          "named": true
-        }
-      ]
-    }
   },
   {
     "type": "value",
@@ -3179,7 +3139,7 @@
     "named": false
   },
   {
-    "type": "implements",
+    "type": "implement",
     "named": false
   },
   {
@@ -3337,10 +3297,6 @@
   },
   {
     "type": "true",
-    "named": false
-  },
-  {
-    "type": "uses",
     "named": false
   },
   {
