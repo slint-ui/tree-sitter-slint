@@ -311,6 +311,16 @@
           }
         ]
       },
+      "deprecation": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "property_deprecation",
+            "named": true
+          }
+        ]
+      },
       "name": {
         "multiple": false,
         "required": true,
@@ -2009,6 +2019,16 @@
           }
         ]
       },
+      "deprecation": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "property_deprecation",
+            "named": true
+          }
+        ]
+      },
       "name": {
         "multiple": false,
         "required": true,
@@ -2079,6 +2099,22 @@
           },
           {
             "type": "imperative_block",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "property_deprecation",
+    "named": true,
+    "fields": {
+      "message": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "string_value",
             "named": true
           }
         ]
@@ -2843,6 +2879,10 @@
   },
   {
     "type": "@conic_gradient",
+    "named": false
+  },
+  {
+    "type": "@deprecated",
     "named": false
   },
   {
