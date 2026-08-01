@@ -420,7 +420,7 @@
                   "name": "id",
                   "content": {
                     "type": "SYMBOL",
-                    "name": "simple_identifier"
+                    "name": "_statement_identifier"
                   }
                 },
                 {
@@ -439,7 +439,7 @@
           "name": "type",
           "content": {
             "type": "SYMBOL",
-            "name": "user_type_identifier"
+            "name": "_statement_type_identifier"
           }
         },
         {
@@ -937,7 +937,7 @@
           "name": "name",
           "content": {
             "type": "SYMBOL",
-            "name": "simple_identifier"
+            "name": "_statement_identifier"
           }
         },
         {
@@ -1527,11 +1527,130 @@
         },
         {
           "type": "SYMBOL",
+          "name": "slot_declaration"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "slot_assignment"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "slot_forwarding"
+        },
+        {
+          "type": "SYMBOL",
           "name": "states_definition"
         },
         {
           "type": "SYMBOL",
           "name": "transitions_definition"
+        }
+      ]
+    },
+    "slot_declaration": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "slot"
+        },
+        {
+          "type": "FIELD",
+          "name": "name",
+          "content": {
+            "type": "SYMBOL",
+            "name": "simple_identifier"
+          }
+        },
+        {
+          "type": "STRING",
+          "value": ";"
+        }
+      ]
+    },
+    "_statement_identifier": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "simple_identifier"
+        },
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "STRING",
+            "value": "slot"
+          },
+          "named": true,
+          "value": "simple_identifier"
+        }
+      ]
+    },
+    "_statement_type_identifier": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "user_type_identifier"
+        },
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "STRING",
+            "value": "slot"
+          },
+          "named": true,
+          "value": "user_type_identifier"
+        }
+      ]
+    },
+    "slot_assignment": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "FIELD",
+          "name": "name",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_statement_identifier"
+          }
+        },
+        {
+          "type": "STRING",
+          "value": "<<"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "component"
+        }
+      ]
+    },
+    "slot_forwarding": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "FIELD",
+          "name": "name",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_statement_identifier"
+          }
+        },
+        {
+          "type": "STRING",
+          "value": "<<"
+        },
+        {
+          "type": "FIELD",
+          "name": "value",
+          "content": {
+            "type": "SYMBOL",
+            "name": "expression"
+          }
+        },
+        {
+          "type": "STRING",
+          "value": ";"
         }
       ]
     },
@@ -1543,7 +1662,7 @@
           "name": "property",
           "content": {
             "type": "SYMBOL",
-            "name": "simple_identifier"
+            "name": "_statement_identifier"
           }
         },
         {
@@ -3382,7 +3501,7 @@
             "members": [
               {
                 "type": "SYMBOL",
-                "name": "simple_identifier"
+                "name": "_statement_identifier"
               },
               {
                 "type": "ALIAS",
@@ -5159,7 +5278,10 @@
       "name": "block_comment"
     }
   ],
-  "inline": [],
+  "inline": [
+    "_statement_identifier",
+    "_statement_type_identifier"
+  ],
   "supertypes": [],
   "reserved": {}
 }

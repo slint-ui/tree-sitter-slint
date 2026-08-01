@@ -412,6 +412,18 @@
           "named": true
         },
         {
+          "type": "slot_assignment",
+          "named": true
+        },
+        {
+          "type": "slot_declaration",
+          "named": true
+        },
+        {
+          "type": "slot_forwarding",
+          "named": true
+        },
+        {
           "type": "states_definition",
           "named": true
         },
@@ -2243,6 +2255,74 @@
     }
   },
   {
+    "type": "slot_assignment",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "simple_identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "component",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "slot_declaration",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "simple_identifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "slot_forwarding",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "simple_identifier",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
     "type": "sourcefile",
     "named": true,
     "root": true,
@@ -2842,6 +2922,10 @@
     "named": false
   },
   {
+    "type": "<<",
+    "named": false
+  },
+  {
     "type": "<=",
     "named": false
   },
@@ -3313,6 +3397,10 @@
   },
   {
     "type": "self",
+    "named": false
+  },
+  {
+    "type": "slot",
     "named": false
   },
   {
