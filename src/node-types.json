@@ -3044,6 +3044,18 @@
     "named": false
   },
   {
+    "type": "\\\"",
+    "named": false
+  },
+  {
+    "type": "\\\\",
+    "named": false
+  },
+  {
+    "type": "\\{",
+    "named": false
+  },
+  {
     "type": "]",
     "named": false
   },
@@ -3355,10 +3367,6 @@
   },
   {
     "type": "match",
-    "named": false
-  },
-  {
-    "type": "n",
     "named": false
   },
   {
