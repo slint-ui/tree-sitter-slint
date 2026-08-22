@@ -311,12 +311,16 @@
           }
         ]
       },
-      "deprecation": {
-        "multiple": false,
+      "attributes": {
+        "multiple": true,
         "required": false,
         "types": [
           {
             "type": "property_deprecation",
+            "named": true
+          },
+          {
+            "type": "shadowable",
             "named": true
           }
         ]
@@ -466,6 +470,20 @@
           }
         ]
       },
+      "attributes": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "property_deprecation",
+            "named": true
+          },
+          {
+            "type": "shadowable",
+            "named": true
+          }
+        ]
+      },
       "name": {
         "multiple": false,
         "required": true,
@@ -508,6 +526,20 @@
         "types": [
           {
             "type": "expression",
+            "named": true
+          }
+        ]
+      },
+      "attributes": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "property_deprecation",
+            "named": true
+          },
+          {
+            "type": "shadowable",
             "named": true
           }
         ]
@@ -1146,6 +1178,20 @@
           }
         ]
       },
+      "attributes": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "property_deprecation",
+            "named": true
+          },
+          {
+            "type": "shadowable",
+            "named": true
+          }
+        ]
+      },
       "name": {
         "multiple": false,
         "required": true,
@@ -1196,6 +1242,20 @@
           },
           {
             "type": "typed_identifier",
+            "named": true
+          }
+        ]
+      },
+      "attributes": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "property_deprecation",
+            "named": true
+          },
+          {
+            "type": "shadowable",
             "named": true
           }
         ]
@@ -2029,6 +2089,20 @@
     "type": "property",
     "named": true,
     "fields": {
+      "attributes": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "property_deprecation",
+            "named": true
+          },
+          {
+            "type": "shadowable",
+            "named": true
+          }
+        ]
+      },
       "binding": {
         "multiple": true,
         "required": false,
@@ -2058,16 +2132,6 @@
           {
             "type": "<=>",
             "named": false
-          }
-        ]
-      },
-      "deprecation": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "property_deprecation",
-            "named": true
           }
         ]
       },
@@ -3436,6 +3500,10 @@
   {
     "type": "self",
     "named": false
+  },
+  {
+    "type": "shadowable",
+    "named": true
   },
   {
     "type": "slot",
