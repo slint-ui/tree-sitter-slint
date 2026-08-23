@@ -1545,7 +1545,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "match_statement"
+          "name": "match_element"
         },
         {
           "type": "SYMBOL",
@@ -2192,7 +2192,7 @@
         }
       ]
     },
-    "match_statement": {
+    "match_element": {
       "type": "SEQ",
       "members": [
         {
@@ -2204,7 +2204,7 @@
           "name": "value",
           "content": {
             "type": "SYMBOL",
-            "name": "simple_identifier"
+            "name": "expression"
           }
         },
         {
@@ -2248,6 +2248,10 @@
               {
                 "type": "SYMBOL",
                 "name": "_basic_value"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "user_type_identifier"
               },
               {
                 "type": "SEQ",
@@ -2309,8 +2313,26 @@
           "value": ":"
         },
         {
-          "type": "SYMBOL",
-          "name": "component"
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "component"
+            },
+            {
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "STRING",
+                  "value": "{"
+                },
+                {
+                  "type": "STRING",
+                  "value": "}"
+                }
+              ]
+            }
+          ]
         }
       ]
     },

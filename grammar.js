@@ -285,7 +285,7 @@ module.exports = grammar({
         $.function_definition,
         $.if_statement,
         $.implement_statement,
-        $.match_statement,
+        $.match_element,
         $.property,
         $.property_assignment,
         $.slot_declaration,
@@ -404,9 +404,9 @@ module.exports = grammar({
 
     for_range: ($) => choice($.value_list, $.expression),
 
-    match_statement: ($) =>
+    match_element: ($) =>
       seq("match",
-        field("value", $.simple_identifier),
+        field("value", $.expression),
         "{",
         repeat($.match_case),
         optional($.wildcard_match_case),
@@ -416,13 +416,14 @@ module.exports = grammar({
     match_case: ($) =>
       seq(
         field("case", choice($._basic_value,
+          $.user_type_identifier,
           seq($.user_type_identifier, ".", $.user_type_identifier))),
         ":",
         choice($.component, seq("{", "}"))
       ),
 
     wildcard_match_case: ($) =>
-      seq("*", ":", $.component),
+      seq("*", ":", choice($.component, seq("{", "}"))),
 
     type_list: ($) => seq("[", commaSep($.type), optional(","), "]"),
 

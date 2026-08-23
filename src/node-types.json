@@ -404,7 +404,7 @@
           "named": true
         },
         {
-          "type": "match_statement",
+          "type": "match_element",
           "named": true
         },
         {
@@ -1999,7 +1999,7 @@
     }
   },
   {
-    "type": "match_statement",
+    "type": "match_element",
     "named": true,
     "fields": {
       "value": {
@@ -2007,7 +2007,7 @@
         "required": true,
         "types": [
           {
-            "type": "simple_identifier",
+            "type": "expression",
             "named": true
           }
         ]
@@ -2922,7 +2922,7 @@
     "fields": {},
     "children": {
       "multiple": false,
-      "required": true,
+      "required": false,
       "types": [
         {
           "type": "component",
