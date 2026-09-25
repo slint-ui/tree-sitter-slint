@@ -2217,7 +2217,7 @@
     "fields": {
       "message": {
         "multiple": false,
-        "required": false,
+        "required": true,
         "types": [
           {
             "type": "string_value",
