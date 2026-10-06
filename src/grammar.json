@@ -1139,6 +1139,18 @@
           }
         },
         {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "component_modifier"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
           "type": "SYMBOL",
           "name": "interface_block"
         }

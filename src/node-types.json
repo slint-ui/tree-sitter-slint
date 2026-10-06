@@ -1830,9 +1830,13 @@
       }
     },
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": true,
       "types": [
+        {
+          "type": "component_modifier",
+          "named": true
+        },
         {
           "type": "interface_block",
           "named": true
