@@ -2391,7 +2391,27 @@
             "named": true
           }
         ]
+      },
+      "type": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "user_type_identifier",
+            "named": true
+          }
+        ]
       }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "user_type_identifier",
+          "named": true
+        }
+      ]
     }
   },
   {
