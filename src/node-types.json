@@ -1929,63 +1929,11 @@
     "named": true,
     "fields": {
       "case": {
-        "multiple": true,
+        "multiple": false,
         "required": true,
         "types": [
           {
-            "type": ".",
-            "named": false
-          },
-          {
-            "type": "angle_value",
-            "named": true
-          },
-          {
-            "type": "bool_value",
-            "named": true
-          },
-          {
-            "type": "color_value",
-            "named": true
-          },
-          {
-            "type": "duration_value",
-            "named": true
-          },
-          {
-            "type": "easing_kind_identifier",
-            "named": true
-          },
-          {
-            "type": "float_value",
-            "named": true
-          },
-          {
-            "type": "int_value",
-            "named": true
-          },
-          {
-            "type": "length_value",
-            "named": true
-          },
-          {
-            "type": "percent_value",
-            "named": true
-          },
-          {
-            "type": "physical_length_value",
-            "named": true
-          },
-          {
-            "type": "relative_font_size_value",
-            "named": true
-          },
-          {
-            "type": "string_value",
-            "named": true
-          },
-          {
-            "type": "user_type_identifier",
+            "type": "expression",
             "named": true
           }
         ]

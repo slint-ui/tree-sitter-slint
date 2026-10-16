@@ -2287,34 +2287,8 @@
           "type": "FIELD",
           "name": "case",
           "content": {
-            "type": "CHOICE",
-            "members": [
-              {
-                "type": "SYMBOL",
-                "name": "_basic_value"
-              },
-              {
-                "type": "SYMBOL",
-                "name": "user_type_identifier"
-              },
-              {
-                "type": "SEQ",
-                "members": [
-                  {
-                    "type": "SYMBOL",
-                    "name": "user_type_identifier"
-                  },
-                  {
-                    "type": "STRING",
-                    "value": "."
-                  },
-                  {
-                    "type": "SYMBOL",
-                    "name": "user_type_identifier"
-                  }
-                ]
-              }
-            ]
+            "type": "SYMBOL",
+            "name": "expression"
           }
         },
         {
