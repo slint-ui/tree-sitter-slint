@@ -3921,7 +3921,7 @@
                         "name": "radius",
                         "content": {
                           "type": "SYMBOL",
-                          "name": "length_value"
+                          "name": "expression"
                         }
                       },
                       {
@@ -4060,7 +4060,7 @@
                             "name": "from_angle",
                             "content": {
                               "type": "SYMBOL",
-                              "name": "angle_value"
+                              "name": "expression"
                             }
                           }
                         ]

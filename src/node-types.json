@@ -1464,7 +1464,7 @@
         "required": false,
         "types": [
           {
-            "type": "angle_value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -1492,7 +1492,7 @@
         "required": false,
         "types": [
           {
-            "type": "length_value",
+            "type": "expression",
             "named": true
           }
         ]
