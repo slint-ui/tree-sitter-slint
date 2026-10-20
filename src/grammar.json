@@ -3917,12 +3917,33 @@
                     "type": "CHOICE",
                     "members": [
                       {
-                        "type": "FIELD",
-                        "name": "radius",
-                        "content": {
-                          "type": "SYMBOL",
-                          "name": "expression"
-                        }
+                        "type": "SEQ",
+                        "members": [
+                          {
+                            "type": "FIELD",
+                            "name": "radius",
+                            "content": {
+                              "type": "SYMBOL",
+                              "name": "expression"
+                            }
+                          },
+                          {
+                            "type": "CHOICE",
+                            "members": [
+                              {
+                                "type": "FIELD",
+                                "name": "radius",
+                                "content": {
+                                  "type": "SYMBOL",
+                                  "name": "expression"
+                                }
+                              },
+                              {
+                                "type": "BLANK"
+                              }
+                            ]
+                          }
+                        ]
                       },
                       {
                         "type": "BLANK"
@@ -5204,8 +5225,17 @@
       ]
     },
     "radial_gradient_kind": {
-      "type": "STRING",
-      "value": "circle"
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "circle"
+        },
+        {
+          "type": "STRING",
+          "value": "ellipse"
+        }
+      ]
     },
     "conic_gradient_identifier": {
       "type": "CHOICE",

@@ -1488,7 +1488,7 @@
         ]
       },
       "radius": {
-        "multiple": false,
+        "multiple": true,
         "required": false,
         "types": [
           {
@@ -2202,6 +2202,11 @@
   },
   {
     "type": "radial_gradient_identifier",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "radial_gradient_kind",
     "named": true,
     "fields": {}
   },
@@ -3137,6 +3142,10 @@
     "named": true
   },
   {
+    "type": "circle",
+    "named": false
+  },
+  {
     "type": "color",
     "named": false
   },
@@ -3290,6 +3299,10 @@
   },
   {
     "type": "easing",
+    "named": false
+  },
+  {
+    "type": "ellipse",
     "named": false
   },
   {
@@ -3448,10 +3461,6 @@
   {
     "type": "pure",
     "named": false
-  },
-  {
-    "type": "radial_gradient_kind",
-    "named": true
   },
   {
     "type": "relative-font-size",
