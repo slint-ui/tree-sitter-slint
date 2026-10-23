@@ -2322,7 +2322,7 @@
     },
     "children": {
       "multiple": false,
-      "required": true,
+      "required": false,
       "types": [
         {
           "type": "component",
@@ -2335,6 +2335,16 @@
     "type": "slot_declaration",
     "named": true,
     "fields": {
+      "default": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "component",
+            "named": true
+          }
+        ]
+      },
       "name": {
         "multiple": false,
         "required": true,
@@ -3102,6 +3112,10 @@
   },
   {
     "type": "angle",
+    "named": false
+  },
+  {
+    "type": "angle-interpolation",
     "named": false
   },
   {
