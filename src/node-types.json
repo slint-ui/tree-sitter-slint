@@ -322,6 +322,10 @@
           {
             "type": "shadowable",
             "named": true
+          },
+          {
+            "type": "testable",
+            "named": true
           }
         ]
       },
@@ -481,6 +485,10 @@
           {
             "type": "shadowable",
             "named": true
+          },
+          {
+            "type": "testable",
+            "named": true
           }
         ]
       },
@@ -540,6 +548,10 @@
           },
           {
             "type": "shadowable",
+            "named": true
+          },
+          {
+            "type": "testable",
             "named": true
           }
         ]
@@ -1189,6 +1201,10 @@
           {
             "type": "shadowable",
             "named": true
+          },
+          {
+            "type": "testable",
+            "named": true
           }
         ]
       },
@@ -1256,6 +1272,10 @@
           },
           {
             "type": "shadowable",
+            "named": true
+          },
+          {
+            "type": "testable",
             "named": true
           }
         ]
@@ -1464,7 +1484,7 @@
         "required": false,
         "types": [
           {
-            "type": "angle_value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -1488,11 +1508,11 @@
         ]
       },
       "radius": {
-        "multiple": false,
+        "multiple": true,
         "required": false,
         "types": [
           {
-            "type": "length_value",
+            "type": "expression",
             "named": true
           }
         ]
@@ -1830,9 +1850,13 @@
       }
     },
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": true,
       "types": [
+        {
+          "type": "component_modifier",
+          "named": true
+        },
         {
           "type": "interface_block",
           "named": true
@@ -1925,63 +1949,11 @@
     "named": true,
     "fields": {
       "case": {
-        "multiple": true,
+        "multiple": false,
         "required": true,
         "types": [
           {
-            "type": ".",
-            "named": false
-          },
-          {
-            "type": "angle_value",
-            "named": true
-          },
-          {
-            "type": "bool_value",
-            "named": true
-          },
-          {
-            "type": "color_value",
-            "named": true
-          },
-          {
-            "type": "duration_value",
-            "named": true
-          },
-          {
-            "type": "easing_kind_identifier",
-            "named": true
-          },
-          {
-            "type": "float_value",
-            "named": true
-          },
-          {
-            "type": "int_value",
-            "named": true
-          },
-          {
-            "type": "length_value",
-            "named": true
-          },
-          {
-            "type": "percent_value",
-            "named": true
-          },
-          {
-            "type": "physical_length_value",
-            "named": true
-          },
-          {
-            "type": "relative_font_size_value",
-            "named": true
-          },
-          {
-            "type": "string_value",
-            "named": true
-          },
-          {
-            "type": "user_type_identifier",
+            "type": "expression",
             "named": true
           }
         ]
@@ -2100,6 +2072,10 @@
           {
             "type": "shadowable",
             "named": true
+          },
+          {
+            "type": "testable",
+            "named": true
           }
         ]
       },
@@ -2217,7 +2193,7 @@
     "fields": {
       "message": {
         "multiple": false,
-        "required": false,
+        "required": true,
         "types": [
           {
             "type": "string_value",
@@ -2250,6 +2226,11 @@
   },
   {
     "type": "radial_gradient_identifier",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "radial_gradient_kind",
     "named": true,
     "fields": {}
   },
@@ -2365,7 +2346,7 @@
     },
     "children": {
       "multiple": false,
-      "required": true,
+      "required": false,
       "types": [
         {
           "type": "component",
@@ -2378,6 +2359,16 @@
     "type": "slot_declaration",
     "named": true,
     "fields": {
+      "default": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "component",
+            "named": true
+          }
+        ]
+      },
       "name": {
         "multiple": false,
         "required": true,
@@ -2387,7 +2378,27 @@
             "named": true
           }
         ]
+      },
+      "type": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "user_type_identifier",
+            "named": true
+          }
+        ]
       }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "user_type_identifier",
+          "named": true
+        }
+      ]
     }
   },
   {
@@ -3128,6 +3139,10 @@
     "named": false
   },
   {
+    "type": "angle-interpolation",
+    "named": false
+  },
+  {
     "type": "animate",
     "named": false
   },
@@ -3163,6 +3178,10 @@
   {
     "type": "children_identifier",
     "named": true
+  },
+  {
+    "type": "circle",
+    "named": false
   },
   {
     "type": "color",
@@ -3318,6 +3337,10 @@
   },
   {
     "type": "easing",
+    "named": false
+  },
+  {
+    "type": "ellipse",
     "named": false
   },
   {
@@ -3478,10 +3501,6 @@
     "named": false
   },
   {
-    "type": "radial_gradient_kind",
-    "named": true
-  },
-  {
     "type": "relative-font-size",
     "named": false
   },
@@ -3524,6 +3543,10 @@
   {
     "type": "styled-text",
     "named": false
+  },
+  {
+    "type": "testable",
+    "named": true
   },
   {
     "type": "transitions",
